@@ -114,8 +114,8 @@ class Home extends Component {
         <Row>
           <Col>
             <p>
-              柏市議会、市議会議員の特徴を様々な視点で可視化します。<br/>
-              可視化のための解析には<a href='https://github.com/hokuma/kashiwa-gijiroku-analyzer' target='_blank' rel='noopener noreferrer'>こちら</a>で公開しているスクリプトを利用しています。<br/>
+              柏市議会議員の議会での発言をワードクラウドで可視化してみました。<br/>
+              可視化のための前処理には<a href='https://github.com/hokuma/kashiwa-gijiroku-analyzer' target='_blank' rel='noopener noreferrer'>こちら</a>で公開しているスクリプトを利用しています。<br/>
             </p>
           </Col>
         </Row>
