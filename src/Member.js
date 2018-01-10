@@ -18,9 +18,13 @@ class Member extends Component {
   renderWordCloud() {
     if(!this.giin) { return; }
 
-    const maxCount = this.giin.tfidf[0][1];
-    const sizeScale = d3.scaleLinear().domain([1, maxCount]).range([10,100]);
-    const words = this.giin.tfidf.map((d) => {
+    const maxCount = this.giin.counts[0][1];
+    let fontMaxSize = 100;
+    if(this.giin.count < 50) {
+      fontMaxSize = 75;
+    }
+    const sizeScale = d3.scaleLinear().domain([1, maxCount]).range([8, fontMaxSize]);
+    const words = this.giin.counts.map((d) => {
       return {text: d[0], size: sizeScale(d[1])};
     });
 
@@ -99,10 +103,9 @@ class Member extends Component {
           <section>
             <h3>頻繁に言及されるワード</h3>
             <p>
-              名詞に絞りTop200ワードを表示しています。
+              言及回数が多いTop200の名詞を表示しています。
               言及回数が多いワードほど表記が大きくなります。
-              発言回数が少ない場合は、本人の主張や政策等をうまく反映できていない可能性が高いことにご注意ください。
-              また、ワードごとの言及回数に差が出にくいため、ワードクラウド上での文字サイズも均一になりがちです。
+              発言回数が少ない場合は、本人の主張や政策等をうまく反映できていない可能性があります。
             </p>
             <div>
               <svg className='word-cloud' ref={node => this.node = node}></svg>
