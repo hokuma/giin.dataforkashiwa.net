@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <Navbar className='container' color="faded" light expand="md">
-        <NavbarBrand href="/">柏市議会議員 - Data for Kashiwa</NavbarBrand>
+        <NavbarBrand href="/">議事録から見る柏市議会議員</NavbarBrand>
       </Navbar>
     );
   }
