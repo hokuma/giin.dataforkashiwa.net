@@ -19,9 +19,9 @@ class Member extends Component {
     if(!this.giin) { return; }
 
     const maxCount = this.giin.counts[0][1];
-    let fontMaxSize = 100;
-    if(this.giin.count < 50) {
-      fontMaxSize = 75;
+    let fontMaxSize = 120;
+    if(this.giin.count < 30) {
+      fontMaxSize = 50;
     }
     const sizeScale = d3.scaleLinear().domain([1, maxCount]).range([8, fontMaxSize]);
     const words = this.giin.counts.map((d) => {
