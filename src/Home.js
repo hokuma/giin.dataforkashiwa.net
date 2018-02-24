@@ -116,7 +116,7 @@ class Home extends Component {
             <p>
               柏市議会議員の議会での発言をワードクラウドで可視化してみました。<br/>
               可視化のための前処理には<a href='https://github.com/hokuma/kashiwa-gijiroku-analyzer' target='_blank' rel='noopener noreferrer'>こちら</a>で公開しているスクリプトを利用しています。<br/>
-              現職議員の選挙後のH27年第3定例会からH29年第3回定例会までの定例会の議事録を解析しています。<br/>
+              現職議員の選挙後のH27年第3定例会からH29年第4回定例会までの定例会の議事録を解析しています。<br/>
               議事録の原文は<a href='http://www.kaigiroku.net/kensaku/kashiwa/kashiwa.html' target='_blank' rel='noopener noreferrer'>柏市議会会議録検索システム</a>より閲覧可能です。
             </p>
           </Col>
